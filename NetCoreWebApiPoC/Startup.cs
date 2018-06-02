@@ -36,6 +36,7 @@ namespace SampleTodo
             }
 
             app.UseMvc();
+            app.UseFileServer();
         }
     }
 }
