@@ -8,7 +8,7 @@ using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
 using System.Reflection;
 
-namespace SampleTodo
+namespace NetCoreWebApiPoC
 {
     public class Startup
     {

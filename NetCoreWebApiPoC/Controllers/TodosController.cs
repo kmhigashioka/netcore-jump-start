@@ -4,7 +4,7 @@ using NetCoreWebApiPoC.Data;
 using NetCoreWebApiPoC.Data.Dto;
 using NetCoreWebApiPoC.Data.CQRS.Command;
 
-namespace SampleTodo.Controllers
+namespace NetCoreWebApiPoC.Controllers
 {
     [Produces("application/json")]
     [Route("api/Todos")]
