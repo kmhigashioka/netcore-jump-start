@@ -1,10 +1,12 @@
-﻿using MediatR;
+﻿using IdentityServer4.Services;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NetCoreWebApiPoC.Configuration;
 using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
 using NetCoreWebApiPoC.Domain;
@@ -30,6 +32,13 @@ namespace NetCoreWebApiPoC
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<TodoContext>()
                 .AddDefaultTokenProviders();
+            services.AddIdentityServer()
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                .AddInMemoryClients(Config.GetClients())
+                .AddInMemoryApiResources(Config.GetApiResources())
+                .AddDeveloperSigningCredential()
+                .AddAspNetIdentity<ApplicationUser>()
+                .AddProfileService<ProfileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,8 +48,8 @@ namespace NetCoreWebApiPoC
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseAuthentication();
+            
+            app.UseIdentityServer();
             app.UseMvc();
             app.UseFileServer();
         }
