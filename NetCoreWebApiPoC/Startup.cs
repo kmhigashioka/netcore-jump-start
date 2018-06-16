@@ -1,4 +1,4 @@
-﻿using IdentityServer4.Services;
+﻿using IdentityServer4.AccessTokenValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +32,9 @@ namespace NetCoreWebApiPoC
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<TodoContext>()
                 .AddDefaultTokenProviders();
+            services.AddMvcCore()
+                .AddAuthorization()
+                .AddJsonFormatters();
             services.AddIdentityServer()
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryClients(Config.GetClients())
@@ -39,6 +42,18 @@ namespace NetCoreWebApiPoC
                 .AddDeveloperSigningCredential()
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddProfileService<ProfileService>();
+            services
+                .AddAuthentication(options =>
+                {
+                    options.DefaultAuthenticateScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
+                    options.DefaultChallengeScheme = IdentityServerAuthenticationDefaults.AuthenticationScheme;
+                })
+                .AddIdentityServerAuthentication(options =>
+                {
+                    options.Authority = "http://localhost:9340";
+                    options.RequireHttpsMetadata = false;
+                    options.ApiName = "api1";
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +63,8 @@ namespace NetCoreWebApiPoC
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
+            app.UseAuthentication();
             app.UseIdentityServer();
             app.UseMvc();
             app.UseFileServer();

@@ -30,7 +30,8 @@ namespace NetCoreWebApiPoC.Configuration
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
                     },
                     AllowOfflineAccess = true
                 }
@@ -68,7 +69,8 @@ namespace NetCoreWebApiPoC.Configuration
                         new Scope("customAPI.read"),
                         new Scope("customAPI.write")
                     }
-                }
+                },
+                new ApiResource("api1")
             };
         }
     }

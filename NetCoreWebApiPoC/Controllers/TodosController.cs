@@ -3,11 +3,13 @@ using MediatR;
 using NetCoreWebApiPoC.Data;
 using NetCoreWebApiPoC.Data.Dto;
 using NetCoreWebApiPoC.Data.CQRS.Command;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NetCoreWebApiPoC.Controllers
 {
     [Produces("application/json")]
     [Route("api/Todos")]
+    [Authorize]
     public class TodosController : Controller
     {
         private readonly IMediator _mediator;
