@@ -15,9 +15,9 @@ namespace NetCoreWebApiPoC.Data.CQRS.Command
 
     public class NewTodoCommandHandler : IRequestHandler<NewTodoCommand, TodoDto>
     {
-        private readonly TodoContext _context;
+        private readonly ITodoContext _context;
 
-        public NewTodoCommandHandler(TodoContext context)
+        public NewTodoCommandHandler(ITodoContext context)
         {
             _context = context;
         }

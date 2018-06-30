@@ -18,7 +18,7 @@ namespace NetCoreWebApiPoC
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<TodoContext>();
+                    var context = services.GetRequiredService<ITodoContext>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

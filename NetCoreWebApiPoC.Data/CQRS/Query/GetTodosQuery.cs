@@ -16,9 +16,9 @@ namespace NetCoreWebApiPoC.Data
 
     public class GetTodosQueryHandler : IRequestHandler<GetTodosQuery, List<Todo>>
     {
-        private readonly TodoContext _context;
+        private readonly ITodoContext _context;
 
-        public GetTodosQueryHandler(TodoContext context)
+        public GetTodosQueryHandler(ITodoContext context)
         {
             _context = context;
         }
