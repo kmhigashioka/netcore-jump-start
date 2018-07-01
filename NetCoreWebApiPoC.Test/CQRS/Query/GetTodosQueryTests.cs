@@ -18,7 +18,7 @@ namespace NetCoreWebApiPoC.Test.CQRS.Query
             mockContext.Setup(t => t.Todos).Returns(mockDbSetTodos.Object);
 
 
-            var mediator = new Mediator().Send(new GetTodosQuery());
+            //var mediator = new Mediator().Send(new GetTodosQuery());
         }
     }
 }

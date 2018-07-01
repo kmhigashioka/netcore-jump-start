@@ -24,7 +24,7 @@ namespace NetCoreWebApiPoC.Data.CQRS.Command
         public Task<TodoDto> Handle(NewTodoCommand request, CancellationToken cancellationToken)
         {
             var todo = Mapper.Map<Todo>(request.Todo);
-            _context.Add(todo);
+            _context.Todos.Add(todo);
             _context.SaveChanges();
 
             return Task.FromResult(Mapper.Map<TodoDto>(todo));
