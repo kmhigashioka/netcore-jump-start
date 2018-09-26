@@ -67,6 +67,7 @@ namespace NetCoreWebApiPoC
 
             app.UseAuthentication();
             app.UseIdentityServer();
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
             app.UseMvc();
             app.UseFileServer();
         }
