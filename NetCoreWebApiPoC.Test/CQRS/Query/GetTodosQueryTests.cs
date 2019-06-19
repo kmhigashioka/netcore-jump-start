@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using NetCoreWebApiPoC.Domain.Entities;
+using NetCoreWebApiPoc.Persistence;
 using Xunit;
 
 namespace NetCoreWebApiPoC.Test.CQRS.Query

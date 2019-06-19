@@ -1,11 +1,11 @@
 ﻿using MediatR;
-using NetCoreWebApiPoC.Data.Context;
 using Omu.ValueInjecter;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using NetCoreWebApiPoC.Domain.Entities;
+using NetCoreWebApiPoc.Persistence;
 
 namespace NetCoreWebApiPoC.Data
 {

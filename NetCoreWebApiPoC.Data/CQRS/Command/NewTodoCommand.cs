@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.Dto;
 using NetCoreWebApiPoC.Domain.Entities;
+using NetCoreWebApiPoc.Persistence;
 using Omu.ValueInjecter;
 
 namespace NetCoreWebApiPoC.Data.CQRS.Command
