@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoc.Persistenc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.WebUI", "NetCoreWebApiPoC.WebUI\NetCoreWebApiPoC.WebUI.csproj", "{BCF07414-8423-4018-B246-361239CA644F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Test", "NetCoreWebApiPoC.Test\NetCoreWebApiPoC.Test.csproj", "{64EEC033-B004-4BE9-99F6-E5B574F7BCF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Application.Tests", "NetCoreWebApiPoC.Application.Tests\NetCoreWebApiPoC.Application.Tests.csproj", "{AEB3714F-89EE-4919-87A0-121AA86C869B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{BCF07414-8423-4018-B246-361239CA644F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCF07414-8423-4018-B246-361239CA644F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCF07414-8423-4018-B246-361239CA644F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64EEC033-B004-4BE9-99F6-E5B574F7BCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64EEC033-B004-4BE9-99F6-E5B574F7BCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64EEC033-B004-4BE9-99F6-E5B574F7BCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64EEC033-B004-4BE9-99F6-E5B574F7BCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB3714F-89EE-4919-87A0-121AA86C869B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB3714F-89EE-4919-87A0-121AA86C869B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB3714F-89EE-4919-87A0-121AA86C869B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB3714F-89EE-4919-87A0-121AA86C869B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

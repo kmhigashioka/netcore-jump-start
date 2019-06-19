@@ -1,17 +1,17 @@
-﻿using MediatR;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Application.Todos.Commands.NewTodo;
 using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 using NetCoreWebApiPoC.Domain.Entities;
 using Xunit;
 
-namespace NetCoreWebApiPoC.Test.CQRS.Query
+namespace NetCoreWebApiPoC.Application.Tests.Todos.Queries
 {
     public class GetTodosQueryTests
     {
