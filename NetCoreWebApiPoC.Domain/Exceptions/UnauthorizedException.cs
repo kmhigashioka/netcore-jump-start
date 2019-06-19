@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NetCoreWebApiPoC.Data
+namespace NetCoreWebApiPoC.Domain.Exceptions
 {
     public class UnauthorizedException : Exception
     {

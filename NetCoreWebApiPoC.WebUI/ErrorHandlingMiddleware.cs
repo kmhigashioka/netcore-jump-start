@@ -2,7 +2,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using NetCoreWebApiPoC.Data;
+using NetCoreWebApiPoC.Domain.Exceptions;
 using Newtonsoft.Json;
 
 namespace NetCoreWebApiPoC.WebUI
