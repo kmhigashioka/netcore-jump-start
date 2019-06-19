@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoC.WebUI.Controllers;
 using Xunit;
 

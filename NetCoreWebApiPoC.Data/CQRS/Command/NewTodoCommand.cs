@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using MediatR;
 using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.Dto;
-using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.Domain.Entities;
 using Omu.ValueInjecter;
 
 namespace NetCoreWebApiPoC.Data.CQRS.Command

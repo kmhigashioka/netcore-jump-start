@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
-using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoC.WebUI.Configuration;
 
 namespace NetCoreWebApiPoC.WebUI

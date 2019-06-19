@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.Domain.Entities;
 
 namespace NetCoreWebApiPoC.Data.Context
 {

@@ -5,7 +5,7 @@ using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
-using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.Domain.Entities;
 
 namespace NetCoreWebApiPoC.WebUI.Configuration
 {

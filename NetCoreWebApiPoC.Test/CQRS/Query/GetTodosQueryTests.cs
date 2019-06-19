@@ -5,10 +5,10 @@ using Moq;
 using NetCoreWebApiPoC.Data;
 using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
-using NetCoreWebApiPoC.Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using NetCoreWebApiPoC.Domain.Entities;
 using Xunit;
 
 namespace NetCoreWebApiPoC.Test.CQRS.Query
