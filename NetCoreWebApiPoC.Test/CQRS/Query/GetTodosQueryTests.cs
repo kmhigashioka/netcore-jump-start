@@ -5,10 +5,10 @@ using Moq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Application.Todos.Commands.NewTodo;
 using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 using NetCoreWebApiPoC.Domain.Entities;
-using NetCoreWebApiPoc.Persistence;
 using Xunit;
 
 namespace NetCoreWebApiPoC.Test.CQRS.Query

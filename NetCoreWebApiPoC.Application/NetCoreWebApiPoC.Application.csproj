@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NetCoreWebApiPoC.Domain\NetCoreWebApiPoC.Domain.csproj" />
-    <ProjectReference Include="..\NetCoreWebApiPoc.Persistence\NetCoreWebApiPoc.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

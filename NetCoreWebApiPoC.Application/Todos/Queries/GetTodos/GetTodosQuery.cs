@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
+using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Domain.Entities;
-using NetCoreWebApiPoc.Persistence;
 using Omu.ValueInjecter;
 
 namespace NetCoreWebApiPoC.Application.Todos.Queries.GetTodos

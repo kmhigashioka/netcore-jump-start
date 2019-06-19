@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -24,8 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreWebApiPoC.Application\NetCoreWebApiPoC.Application.csproj" />
-    <ProjectReference Include="..\NetCoreWebApiPoC.Domain\NetCoreWebApiPoC.Domain.csproj" />
+    <ProjectReference Include="..\NetCoreWebApiPoc.Persistence\NetCoreWebApiPoc.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
+using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Domain.Entities;
 
 namespace NetCoreWebApiPoc.Persistence
@@ -12,13 +12,6 @@ namespace NetCoreWebApiPoc.Persistence
         }
 
         public DbSet<Todo> Todos { get; set; }
-    }
-
-    public interface ITodoContext
-    {
-        DbSet<Todo> Todos { get; set; }
-        int SaveChanges();
-        DatabaseFacade Database { get; }
     }
 
     public static class DbInitializer

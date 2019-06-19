@@ -2,8 +2,8 @@
 using System.Threading.Tasks;
 using MediatR;
 using NetCoreWebApiPoC.Application.Dto;
+using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Domain.Entities;
-using NetCoreWebApiPoc.Persistence;
 using Omu.ValueInjecter;
 
 namespace NetCoreWebApiPoC.Application.Todos.Commands.NewTodo

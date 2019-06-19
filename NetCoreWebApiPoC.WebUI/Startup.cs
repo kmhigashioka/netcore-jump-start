@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NetCoreWebApiPoC.Application.Interfaces;
 using NetCoreWebApiPoC.Application.Todos.Commands.NewTodo;
 using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoc.Persistence;
