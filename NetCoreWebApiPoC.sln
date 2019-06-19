@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Data", "NetCoreWebApiPoC.Data\NetCoreWebApiPoC.Data.csproj", "{30110F30-136F-42AD-9231-98D8D292A4EB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Domain", "NetCoreWebApiPoC.Domain\NetCoreWebApiPoC.Domain.csproj", "{00DEACDE-AE3E-4893-9719-52F1B72865C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Test", "NetCoreWebApiPoC.Test\NetCoreWebApiPoC.Test.csproj", "{08EE0EB2-6F09-4B3D-B6E2-D0D32E60396D}"
@@ -13,16 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.WebUI", "N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreWebApiPoc.Persistence", "NetCoreWebApiPoc.Persistence\NetCoreWebApiPoc.Persistence.csproj", "{58AD9BDC-6F09-4DE8-939C-8DCB63ECD0CC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApiPoC.Application", "NetCoreWebApiPoC.Application\NetCoreWebApiPoC.Application.csproj", "{9CE8CCE1-6413-4230-9E7A-3844D0BF696D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30110F30-136F-42AD-9231-98D8D292A4EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30110F30-136F-42AD-9231-98D8D292A4EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30110F30-136F-42AD-9231-98D8D292A4EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30110F30-136F-42AD-9231-98D8D292A4EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00DEACDE-AE3E-4893-9719-52F1B72865C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00DEACDE-AE3E-4893-9719-52F1B72865C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00DEACDE-AE3E-4893-9719-52F1B72865C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{58AD9BDC-6F09-4DE8-939C-8DCB63ECD0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58AD9BDC-6F09-4DE8-939C-8DCB63ECD0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58AD9BDC-6F09-4DE8-939C-8DCB63ECD0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE8CCE1-6413-4230-9E7A-3844D0BF696D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE8CCE1-6413-4230-9E7A-3844D0BF696D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE8CCE1-6413-4230-9E7A-3844D0BF696D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE8CCE1-6413-4230-9E7A-3844D0BF696D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

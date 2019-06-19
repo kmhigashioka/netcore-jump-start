@@ -1,13 +1,13 @@
-﻿using MediatR;
-using Omu.ValueInjecter;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MediatR;
 using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoc.Persistence;
+using Omu.ValueInjecter;
 
-namespace NetCoreWebApiPoC.Data
+namespace NetCoreWebApiPoC.Application.Todos.Queries.GetTodos
 {
     public class GetTodosQuery : IRequest<List<Todo>>
     {

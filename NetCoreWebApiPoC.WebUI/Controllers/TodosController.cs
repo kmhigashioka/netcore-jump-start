@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Data.CQRS.Command;
-using NetCoreWebApiPoC.Data.Dto;
+using NetCoreWebApiPoC.Application.Dto;
+using NetCoreWebApiPoC.Application.Todos.Commands.NewTodo;
+using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 
 namespace NetCoreWebApiPoC.WebUI.Controllers
 {

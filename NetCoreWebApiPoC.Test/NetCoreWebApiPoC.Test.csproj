@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreWebApiPoC.Data\NetCoreWebApiPoC.Data.csproj" />
     <ProjectReference Include="..\NetCoreWebApiPoC.Domain\NetCoreWebApiPoC.Domain.csproj" />
     <ProjectReference Include="..\NetCoreWebApiPoC.WebUI\NetCoreWebApiPoC.WebUI.csproj" />
   </ItemGroup>

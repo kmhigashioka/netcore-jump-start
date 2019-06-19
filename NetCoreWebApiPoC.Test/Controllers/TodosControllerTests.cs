@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using NetCoreWebApiPoC.Data;
+using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoC.WebUI.Controllers;
 using Xunit;

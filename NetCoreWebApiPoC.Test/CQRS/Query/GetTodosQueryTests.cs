@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
-using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Data.CQRS.Command;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using NetCoreWebApiPoC.Application.Todos.Commands.NewTodo;
+using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoc.Persistence;
 using Xunit;
