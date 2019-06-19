@@ -1,12 +1,12 @@
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
-using NetCoreWebApiPoC.Controllers;
-using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Domain;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using NetCoreWebApiPoC.Data;
+using NetCoreWebApiPoC.Domain;
+using NetCoreWebApiPoC.WebUI.Controllers;
 using Xunit;
 
 namespace NetCoreWebApiPoC.Test.Controllers

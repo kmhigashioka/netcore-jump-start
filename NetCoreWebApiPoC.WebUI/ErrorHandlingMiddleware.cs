@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using NetCoreWebApiPoC.Data;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using NetCoreWebApiPoC.Data;
+using Newtonsoft.Json;
 
-namespace NetCoreWebApiPoC
+namespace NetCoreWebApiPoC.WebUI
 {
     public class ErrorHandlingMiddleware
     {

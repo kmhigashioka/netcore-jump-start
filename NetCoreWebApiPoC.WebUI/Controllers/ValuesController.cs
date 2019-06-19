@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace NetCoreWebApiPoC.Controllers
+namespace NetCoreWebApiPoC.WebUI.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

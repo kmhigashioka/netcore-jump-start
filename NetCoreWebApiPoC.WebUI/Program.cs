@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore;
+﻿using System;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NetCoreWebApiPoC.Data.Context;
-using System;
 
-namespace NetCoreWebApiPoC
+namespace NetCoreWebApiPoC.WebUI
 {
     public class Program
     {

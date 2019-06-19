@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MediatR;
-using NetCoreWebApiPoC.Data;
-using NetCoreWebApiPoC.Data.Dto;
-using NetCoreWebApiPoC.Data.CQRS.Command;
+﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using NetCoreWebApiPoC.Data;
+using NetCoreWebApiPoC.Data.CQRS.Command;
+using NetCoreWebApiPoC.Data.Dto;
 
-namespace NetCoreWebApiPoC.Controllers
+namespace NetCoreWebApiPoC.WebUI.Controllers
 {
     [Produces("application/json")]
     [Route("api/Todos")]

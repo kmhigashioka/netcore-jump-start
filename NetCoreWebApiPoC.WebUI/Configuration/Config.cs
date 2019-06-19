@@ -1,13 +1,13 @@
-﻿using IdentityServer4;
+﻿using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using NetCoreWebApiPoC.Domain;
-using System.Collections.Generic;
-using System.Security.Claims;
-using System.Threading.Tasks;
 
-namespace NetCoreWebApiPoC.Configuration
+namespace NetCoreWebApiPoC.WebUI.Configuration
 {
     public class Config
     {

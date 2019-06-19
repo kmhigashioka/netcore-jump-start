@@ -1,4 +1,5 @@
-﻿using IdentityServer4.AccessTokenValidation;
+﻿using System.Reflection;
+using IdentityServer4.AccessTokenValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,13 +7,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NetCoreWebApiPoC.Configuration;
 using NetCoreWebApiPoC.Data.Context;
 using NetCoreWebApiPoC.Data.CQRS.Command;
 using NetCoreWebApiPoC.Domain;
-using System.Reflection;
+using NetCoreWebApiPoC.WebUI.Configuration;
 
-namespace NetCoreWebApiPoC
+namespace NetCoreWebApiPoC.WebUI
 {
     public class Startup
     {
