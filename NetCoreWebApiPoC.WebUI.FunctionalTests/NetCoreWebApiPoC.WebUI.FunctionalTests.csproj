@@ -1,14 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="5.0.1" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
     <PackageReference Include="Moq" Version="4.8.3" />
     <PackageReference Include="xunit" Version="2.3.1" />
@@ -17,8 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreWebApiPoC.Application\NetCoreWebApiPoC.Application.csproj" />
-    <ProjectReference Include="..\NetCoreWebApiPoc.Persistence\NetCoreWebApiPoc.Persistence.csproj" />
+    <ProjectReference Include="..\NetCoreWebApiPoC.WebUI\NetCoreWebApiPoC.WebUI.csproj" />
   </ItemGroup>
 
 </Project>

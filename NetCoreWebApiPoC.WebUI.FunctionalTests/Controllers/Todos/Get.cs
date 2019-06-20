@@ -1,17 +1,17 @@
-using MediatR;
-using Moq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 using NetCoreWebApiPoC.Application.Todos.Queries.GetTodos;
 using NetCoreWebApiPoC.Domain.Entities;
 using NetCoreWebApiPoC.WebUI.Controllers;
 using Xunit;
 
-namespace NetCoreWebApiPoC.Test.Controllers
+namespace NetCoreWebApiPoC.WebUI.FunctionalTests.Controllers.Todos
 {
-    public class TodosControllerTests
+    public class Get
     {
         [Fact]
         public void Get_Todos()
