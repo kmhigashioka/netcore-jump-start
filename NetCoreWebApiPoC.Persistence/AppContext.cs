@@ -5,9 +5,9 @@ using NetCoreWebApiPoC.Domain.Entities;
 
 namespace NetCoreWebApiPoC.Persistence
 {
-    public class TodoContext : IdentityDbContext<ApplicationUser>, ITodoContext
+    public class AppContext : IdentityDbContext<ApplicationUser>, IAppContext
     {
-        public TodoContext(DbContextOptions<TodoContext> options) : base(options)
+        public AppContext(DbContextOptions<AppContext> options) : base(options)
         {
         }
 
@@ -16,7 +16,7 @@ namespace NetCoreWebApiPoC.Persistence
 
     public static class DbInitializer
     {
-        public static void Initialize(ITodoContext context)
+        public static void Initialize(IAppContext context)
         {
             context.Database.EnsureCreated();
         }
