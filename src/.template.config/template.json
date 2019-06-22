@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Kazuhito Higashioka",
+  "classifications": [ "Web", "Empty", "Test", "xUnit" ],
+  "identity": "cleanbp.io.kazuhito",
+  "name": "Clean Boilerplate",
+  "shortName": "cleanbp",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "NetCoreWebApiPoC"
+}
