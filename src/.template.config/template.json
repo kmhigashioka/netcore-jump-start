@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Kazuhito Higashioka",
   "classifications": [ "Web", "Empty", "Test", "xUnit" ],
-  "identity": "cleanbp.io.kazuhito",
+  "identity": "CleanBP",
   "name": "Clean Boilerplate",
   "shortName": "cleanbp",
   "tags": {
