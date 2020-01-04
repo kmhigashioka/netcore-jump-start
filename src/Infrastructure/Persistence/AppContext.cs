@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
+using Infrastructure.Identity;
 
-namespace Persistence
+namespace Infrastructure.Persistence
 {
     public class AppContext : IdentityDbContext<ApplicationUser>, IAppContext
     {
