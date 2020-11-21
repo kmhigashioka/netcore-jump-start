@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 using Infrastructure.Identity;
+using System.Diagnostics;
 
 namespace Infrastructure.Persistence
 {
@@ -37,5 +38,10 @@ namespace Infrastructure.Persistence
             }
             return base.SaveChanges();
         }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder
+                .LogTo(message => Debug.WriteLine(message))
+                .EnableSensitiveDataLogging();
     }
 }
